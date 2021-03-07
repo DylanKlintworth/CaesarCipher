@@ -12,17 +12,10 @@ class CaeserCipher:
     def encode(string, shift):
         
         decimals = [ord(x) for x in string]
-
-    
         shifted = [x + shift for x in decimals]
-    
         shifted_string = [chr(x) for x in shifted]
-    
         ret = ""
-    
         for x in shifted_string:
-        
             ret += x
-    
         return ret
 
